@@ -44,7 +44,8 @@ Vue.component('todo', {
   },
   template: ` 
   <div class="row h-100">
-  <div class=" col-6 my-auto offset-md-3">
+  <div class=" col-md-8 col-sm-10 offset-sm-1 offset-md-2">
+  <img class="mx-auto d-block" style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg">
   <input type="text" v-model="newTodo" class="mb-4 form-control" id="inputtodo" placeholder="Enter ToDo">
   <button v-on:click="addTodo" type="button" class="mb-4 btn btn-primary btn-lg btn-block">Add</button>
   <div>
@@ -78,11 +79,6 @@ Vue.component('navbar', {
         name: 'About',
         url: '#',
         id: 2,
-      },
-      {
-        name: 'Something',
-        url: '#',
-        id: 3,
       }
     ],
     }
